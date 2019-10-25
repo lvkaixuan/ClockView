@@ -52,7 +52,7 @@ canvas.drawCircle(mWidth / 2, mHeight / 2, mHeight / 2 - dp2px(borderPadding), m
 
 * ### 旋转数字
 
-```java
+```!
 这里为什么要旋转数字呢?有人可能会注意到数字随着角度旋转了,这样很不友好,所以我们需要把数字都"正"过来
 ```
 
