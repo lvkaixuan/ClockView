@@ -2,7 +2,7 @@
 Android自定义View之会走动的时钟
 效果图如下: 
 
-<img src="https://user-gold-cdn.xitu.io/2019/10/25/16e01db9a70b32fc?w=311&h=640&f=gif&s=1472292" width="155" height="320">
+<img src="https://user-gold-cdn.xitu.io/2019/10/25/16e01db9a70b32fc?w=311&h=640&f=gif&s=1472292" width="232" height="480">
 
 ## 绘制流程: 
 
@@ -51,11 +51,13 @@ canvas.drawCircle(mWidth / 2, mHeight / 2, mHeight / 2 - dp2px(borderPadding), m
 <img src="https://user-gold-cdn.xitu.io/2019/10/25/16e01ea1fa03bd8d?w=370&h=370&f=png&s=31537" width="207" height="207">
 
 * ### 旋转数字
-```!
+
+```java
 这里为什么要旋转数字呢?有人可能会注意到数字随着角度旋转了,这样很不友好,所以我们需要把数字都"正"过来
 ```
 
 <img src="https://user-gold-cdn.xitu.io/2019/10/25/16e01f32b6a6d3bb?w=880&h=736&f=png&s=124075" width="440" height="368">
+
 ```java
         //绘制刻度数字
         for (int i = 0; i < 12; i++) {
